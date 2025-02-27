@@ -14,6 +14,7 @@ function takeEmail() {
         console.log(emailEl);
         let liEl = document.createElement('li');
         liEl.innerText = emailEl;
+        
         emailList.appendChild(liEl); 
         
     })
