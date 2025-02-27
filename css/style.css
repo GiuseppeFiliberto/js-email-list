@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 ul{
     list-style: none;
 }
@@ -7,5 +15,11 @@ ul{
 }
 
 li{
-    color: green;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
 }
