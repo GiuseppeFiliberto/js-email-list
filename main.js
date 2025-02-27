@@ -9,9 +9,12 @@ function takeEmail() {
     return fetch ('https://flynn.boolean.careers/exercises/api/random/mail')
     .then(response => response.json())
     .then ((data) => {
-
+        console.log("qui ho eseguito tuttecose")
         const emailEl = data.response;
         console.log(emailEl);
+        let liEl = document.createElement('li');
+        liEl.innerText = emailEl;
+        emailList.appendChild(liEl); 
         
     })
         
@@ -25,18 +28,18 @@ function emailGenerator() {
 
 
     for (let index = 0; index < 10; index++) {
+
+        console.log('qui entro nella funzione')
         const emailTest = takeEmail()
-        thisEmail = emailTest[index]
-        let liEl = document.createElement('li');
-        emailList.appendChild(liEl);
+        console.log("qui proseguo con tuttecose");
+       
         
     }
 }
 
 
 
-const emailTest = takeEmail()
-console.log(emailTest);
+
 
 let test = emailGenerator()
 console.log(test);
