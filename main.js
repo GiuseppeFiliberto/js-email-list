@@ -1,7 +1,7 @@
 /* Attraverso l'apposita API di Boolean https://flynn.boolean.careers/exercises/api/random/mail generare 10 indirizzi email e stamparli in pagina all'interno di una lista. */
 
 const emailList = document.getElementById('list');
-
+const btnEl = document.querySelector('.btn')
 
 // creo una funzione per prendere la mail dall'API
 
@@ -14,14 +14,18 @@ function takeEmail() {
         console.log(emailEl);
         let liEl = document.createElement('li');
         liEl.innerText = emailEl;
-        
         emailList.appendChild(liEl); 
         
     })
         
     
 }
-
+btnEl.addEventListener('click', function(){
+    
+    emailGenerator()
+    emailList.innerHTML = ''
+    
+})
 //creo una funzione che generi casualmente 10 email che prenderà grazie alla funzione elaborata in precedenza
 
 
@@ -42,6 +46,5 @@ function emailGenerator() {
 
 
 
-let test = emailGenerator()
-console.log(test);
+
 
