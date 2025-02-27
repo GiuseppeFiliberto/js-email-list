@@ -10,6 +10,24 @@ function takeEmail() {
     .then(response => response.json())
     .then (data => data.response)
 
+    const emailEl = data.response;
+    console.log(emailEl);
+    
+}
+
+//creo una funzione che generi casualmente 10 email che prenderà grazie alla funzione elaborata in precedenza
+
+let = emails = []
+
+function emailGenerator() {
+
+
+    for (let index = 0; index < 10; index++) {
+        const emailTest = takeEmail()
+        thisEmail = emailTest[i]
+        let liEl = document.createElement('li')
+        
+    }
 }
 
 
