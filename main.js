@@ -20,16 +20,15 @@ function takeEmail() {
 
 //creo una funzione che generi casualmente 10 email che prenderà grazie alla funzione elaborata in precedenza
 
-let = emails = []
 
 function emailGenerator() {
 
 
     for (let index = 0; index < 10; index++) {
         const emailTest = takeEmail()
-        thisEmail = emailTest[i]
+        thisEmail = emailTest[index]
         let liEl = document.createElement('li');
-        emailList.appendChild(li);
+        emailList.appendChild(liEl);
         
     }
 }
@@ -38,3 +37,7 @@ function emailGenerator() {
 
 const emailTest = takeEmail()
 console.log(emailTest);
+
+let test = emailGenerator()
+console.log(test);
+
